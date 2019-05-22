@@ -1,5 +1,5 @@
 # Sprint Challenge: JavaScript Fundamentals
-
+ 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
 
 ## Instructions
@@ -30,13 +30,51 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.map goes over an array and returns a new array.
+
+.forEach goes over an array and can change items in the array.
+
 2. What is the difference between a function and a method?
+
+They're similar. Both do tasks you give it. Except a method is a function inside of an object.
+
+Method example:
+let methodExample = {
+    example: function() {
+        return 'this is a method example';
+    }
+};
 
 3. What is closure?
 
+A closure is when a function looks outside the scope to search for a variable being referenced in the outer scope.
+
+Example:
+const example = 1;
+function findNumber() {
+    return example;
+}
+return findNumber();
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1 = Global Binding
+"this" is the window/console object.
+
+Rule 2 = Implicit Binding
+The object before a dot in a function.
+Example: ruleTwo.example(2); <-- ruleTwo is the object before the dot.
+
+Rule 3 = New Binding
+When a constructor function is used.
+
+Rule 4 = Explicit Binding
+When Call or Apply method is used, "this" is explicitly defined
+
 5. Why do we need super() in an extended class?
+
+To replace Explicit Binding
+Allows you to access functions on an object's parent.
 
 ## Project Set up
 
